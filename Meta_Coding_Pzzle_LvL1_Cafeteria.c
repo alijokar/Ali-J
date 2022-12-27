@@ -19,14 +19,26 @@ Sample test case #2:
 */
 
 
-#include<stdio.h>
+#include <stdio.h>
+#include <time.h>
 
 long long getMaxAdditionalDinersCount(long long N, long long K, int M, long long* S);
 
 int main()
 {
-    long long N=15, K= 2, M=3, S[]={11, 6, 14};
+    long long N=1, K= 2, M=0, S[]={};
+    // clock is being used to calculate process time and Time taken by a process
+    clock_t t;
+    double time_taken;
+    
+    t = clock();
     printf("%lld\n", getMaxAdditionalDinersCount(N, K, M, S));
+    t = clock() - t;
+
+    time_taken = ((double)t)/CLOCKS_PER_SEC; 
+
+    printf("Time taken by f(): %f\n", time_taken);
+
 }
 
 
