@@ -1,1 +1,1 @@
-argv
+double_string_func

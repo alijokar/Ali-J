@@ -20,7 +20,7 @@ int main(){
 
     max_min(array, &max, &min);
 
-    printf("max and min values in array is %d and %d.\n", max, min);
+    printf("max and min values in array are %d and %d.\n", max, min);
 
 }
 

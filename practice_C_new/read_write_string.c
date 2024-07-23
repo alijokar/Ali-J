@@ -32,7 +32,7 @@ void main()
 }
 
 /* This function will read the message with max n length and 
-retuns the actial length */
+retuns the actual length */
 
 int read_line(char str[], int n){
     int ch, i = 0;
